@@ -1,0 +1,267 @@
+body {
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, #1d346f, #020617);
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* vertical center */
+  align-items: center;       /* horizontal center */
+}
+
+/* Heading */
+.a h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Section */
+.b {
+  text-align: center;
+  
+}
+
+
+/* Images */
+.b img {
+  margin: 10px;
+  border-radius: 25%;
+  cursor: pointer;
+  border-bottom: 10px solid white;
+}
+
+/* effect */
+.b img {
+  margin: 10px;
+  border-radius: 25%;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.b img:hover {
+  transform: scale(1.15) translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  opacity: 70%;
+}
+.a h1 span{
+    color: yellow;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7),
+                 0 0 20px rgba(255, 215, 0, 0.6);
+                 
+}
+.ray-container {
+    width: 350px;
+    height: 3px;
+    margin: 10px auto;
+    position: relative;
+    overflow: hidden;
+    background: rgba(255,255,255,0.08);
+    border-radius: 10px;
+}
+
+/* Thin sharp sparkle */
+.ray {
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: 40px;
+    height: 100%;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        #ffffff,
+        transparent
+    );
+
+    animation: sparkleMove 1.5s linear infinite;
+}
+
+/* Extra sharp highlight */
+.ray::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 6px;
+    height: 100%;
+    transform: translateX(-50%);
+    background: white;
+}
+
+/* Animation */
+@keyframes sparkleMove {
+    0% {
+        left: -60px;
+    }
+    100% {
+        left: 100%;
+    }
+}
+.d{
+  gap: 15px; 
+  display: grid;
+  grid-template-columns: repeat(5,60px);
+  justify-content: center;
+  
+}
+.slot{
+  width: 50px;
+  height: 50px;
+  background-color: #1a1f2e;
+  border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+.slot:hover {
+    transform: scale(1.1);
+    background: #2a3145;
+}
+
+/* Selected slot */
+.slot.active {
+    background: red;
+}
+.e h1 span{
+  color: yellow;
+}
+.f {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+    position: relative;
+    overflow: hidden;
+    background: rgba(255,255,255,0.08);
+    border-radius: 10px;
+}
+
+/* Thin sharp sparkle */
+.line-animation {
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: 40px;
+    height: 100%;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        #ffffff,
+        transparent
+    );
+
+    animation: sparkleMove 1.5s linear infinite;
+}
+
+/* Extra sharp highlight */
+.line-animation::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 6px;
+    height: 100%;
+    transform: translateX(-50%);
+    background: white;
+}
+
+/* Animation */
+@keyframes sparkleMove {
+    0% {
+        left: -60px;
+    }
+    100% {
+        left: 100%;
+    }
+}
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0,0,0,0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: #111827;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    width: 300px;
+}
+
+.popup-content input {
+    width: 100%;
+    margin: 8px 0;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+}
+
+.popup-content button {
+    margin: 10px 5px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#submit {
+    background: green;
+    color: white;
+}
+
+#close {
+    background: red;
+    color: white;
+}
+.g {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+model-viewer {
+    width: 350px;
+    height: 250px;
+    background: transparent;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(-150px); }
+}
+#g h1, .g h1 {
+    font-size: 28px;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+/* glowing effect */
+.g h1 {
+    color: white;
+    text-shadow: 0 0 10px rgba(255,255,255,0.6),
+                 0 0 20px rgba(0,150,255,0.5);
+}
+.g h1::after {
+    content: "|";
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}

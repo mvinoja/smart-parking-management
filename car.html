@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="e">
+        <h1>CAR <span>PARKING</span></h1>
+    </div>
+    <div class="f">
+        <div class="g">
+            <h1 id="text1"></h1>
+            <model-viewer src="porsche.glb" alt="3D Car" auto-rotate camera-controls
+                style="width: 300px; height: 250px;">
+            </model-viewer>
+            <h1 id="text2"></h1>
+        </div>
+    </div>
+    <br>
+    <div class="d" id="d1">
+
+    </div>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <h2>Book Slot</h2>
+
+            <input type="text" placeholder="Your Name" id="name">
+            <input type="text" placeholder="Car Number" id="car">
+            <input type="time" id="time" step="1">
+            <input type="text" placeholder="Code" id="code">
+            <p><i>NOTE:</i>Please enter the unique code shown at your selected slot to proceed.</p>
+
+            <button id="submit">Confirm</button>
+            <button id="close">Cancel</button>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script src="car.js"></script>
+
+</body>
+
+</html>
