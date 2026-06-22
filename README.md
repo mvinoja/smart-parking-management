@@ -58,6 +58,11 @@ All parking information is stored using the browser's Local Storage, allowing da
 
 ---
 
+## Screenshots
+<img width="1052" height="887" alt="Screenshot 2026-06-22 230048" src="https://github.com/user-attachments/assets/05fd475b-f389-46b6-93ec-de3908157ceb" />
+
+
+
 ## 📂 Data Stored
 
 The following details are stored in Local Storage:
